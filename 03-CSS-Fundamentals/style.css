@@ -8,6 +8,7 @@ body {
   color: #444;
   font-family: sans-serif;
   border-top: 10px solid #1098ad;
+  position: relative;
 }
 
 .container {
@@ -15,6 +16,7 @@ body {
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
+  /* position: relative; */
 }
 .main-header {
   background-color: #d1d0d0;
@@ -23,7 +25,7 @@ body {
   padding-right: 40px; */
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
+  /* height: 80px; */
 }
 
 nav {
@@ -35,6 +37,7 @@ article {
 }
 .post-header {
   margin-bottom: 40px;
+  /* position: relative; */
 }
 
 aside {
@@ -78,6 +81,7 @@ p {
   font-size: 22px;
   line-height: 1.5;
   margin-bottom: 15px;
+  /* display: inline; */
 }
 
 ul,
@@ -89,6 +93,7 @@ ol {
 li {
   font-size: 20px;
   margin-bottom: 10px;
+  /* display: inline; */
 }
 
 li:last-child {
@@ -172,6 +177,61 @@ a:active {
 .post-img {
   width: 100%;
   height: auto;
+}
+
+nav a:link {
+  /* background-color: orange;
+  margin: 20px;
+  padding: 20px;
+
+  display: block;  */
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 10px;
+}
+
+/* h2::first-letter {
+  font-size: 80px;
+} */
+
+/* h3 + p::first-line {
+  color: red;
+} */
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
 }
 
 /* LVHA */
