@@ -32,9 +32,9 @@ strong {
 .grayStyle {
   color: gray;
   text-transform: uppercase;
-  float: left;
-  margin-top: 15px;
-  padding-left: 55px;
+  /* float: left; */
+  /* margin-top: 15px;*/
+  /* margin-left: 55px; */
 }
 
 h3 {
@@ -46,7 +46,6 @@ h3 {
 a {
   color: black;
   margin-bottom: 30px;
-  display: inline-block;
 }
 
 li {
@@ -93,7 +92,6 @@ button:hover {
   background-color: black;
   height: 22px;
   width: 22px;
-  display: inline-block;
   margin-right: 10px;
 }
 .color-blue {
@@ -117,6 +115,7 @@ article {
   margin: 0 auto;
 }
 
+/* Layout for the details section 
 .box-img {
   width: 300px;
   float: left;
@@ -132,22 +131,43 @@ article {
   width: 300px;
   float: right;
 }
+  */
 .price-shipping {
-  float: left;
-  padding-top: 10px;
+  font-size: 25px;
 }
 
 .description-details {
-  clear: both;
-  padding-top: 20px;
-  padding-left: 20px;
+  padding-right: 40px;
 }
-
 .tittle-details {
-  float: left;
+  margin-left: -20px;
+  margin-bottom: 30px;
 }
 
 .description {
-  clear: both;
-  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 17px;
+}
+
+.part-box {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.price-shipping-box {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.box-details {
+  flex: 0 1 440px;
+}
+
+.colors {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
 }
