@@ -27,7 +27,7 @@ body {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   /* height: 80px; */
 }
 
@@ -37,7 +37,7 @@ nav {
 }
 
 article {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 .post-header {
@@ -281,9 +281,7 @@ h1 {
   float: left;
 }
 
-nav {
-  float: right;
-}
+
 
 .clear {
   clear: both;
@@ -311,7 +309,7 @@ footer {
 */
 
 /* LAYOUTS WITH FLEXBOX */
-.main-header {
+/* .main-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -320,7 +318,6 @@ footer {
 .author-box {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   margin-bottom: 15px;
 }
 
@@ -365,4 +362,31 @@ footer {
 article {
   flex: 1;
   margin-bottom: 0;
+} */
+
+/* CSS GRID LAYOUT */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+.main-header {
+  grid-column: 1 / -1;
+  justify-content: space-between;
+}
+
+article {
+}
+
+aside {
+}
+
+footer {
+  grid-column: 1 / -1;
+}
+nav {
+  float: right;
 }

@@ -72,10 +72,20 @@ button:hover {
 }
 
 .container {
-  width: 800px;
-  margin: 0 auto;
+  /* width: 800px;
+  margin: 0 auto; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
 }
 
+.header-title {
+  grid-column: 1 / -1;
+}
+
+button {
+  grid-column: 1/ -1;
+}
 .anounced {
   position: absolute;
   background-color: red;
